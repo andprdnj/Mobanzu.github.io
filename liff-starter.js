@@ -46,7 +46,7 @@ function sendLiff(){
             text: getParameterByName('text'),
             sentBy: {
                 label: "もバンズ",
-                iconUrl: "https://i.ibb.co/tKhLYX4/activated.gif",
+                iconUrl: "https://i.ibb.co.com/tKhLYX4/activated.gif",
                 linkUrl: "https://Mo-banzu.github.io"
             }
         }]).then(function () {
@@ -59,7 +59,7 @@ function sendLiff(){
             previewImageUrl: getParameterByName('img'),
             sentBy: {
                 label: "もバンズ",
-                iconUrl: "https://i.ibb.co/tKhLYX4/activated.gif",
+                iconUrl: "https://i.ibb.co.com/tKhLYX4/activated.gif",
                 linkUrl: "https://Mo-banzu.github.io"
             }
         }]).then(function () {
@@ -68,14 +68,14 @@ function sendLiff(){
     } else if (tipe === 'video') {
         prev = getParameterByName('piu');
         if(prev !== null && prev !== '') {
-            dura = prev;
+            piu = prev;
         } else {
-            dura = "https://i.ibb.co/TTSjGpt/activity.gif";
+            piu = "https://i.ibb.co.com/TTSjGpt/activity.gif";
         }
         liff.sendMessages([{
             type: 'video',
             originalContentUrl: getParameterByName('ocu'),
-            previewImageUrl: dura
+            previewImageUrl: piu
         }]).then(function () {
             liff.closeWindow();
         });
